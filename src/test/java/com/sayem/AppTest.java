@@ -37,9 +37,11 @@ public class AppTest
 	public void testApp()
 	{
 		WebDriver driver = new FirefoxDriver();
+		System.out.println("before creating the instance");
 
 		// Go to the Google Suggest home page
 		driver.get("http://www.google.com/webhp?complete=1&hl=en");
+		System.out.println("after creating the instance");
 		assertTrue( true );
 	}
 }
