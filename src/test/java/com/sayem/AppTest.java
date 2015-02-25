@@ -1,5 +1,8 @@
 package com.sayem;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -31,8 +34,12 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	public void testApp()
+	{
+		WebDriver driver = new FirefoxDriver();
+
+		// Go to the Google Suggest home page
+		driver.get("http://www.google.com/webhp?complete=1&hl=en");
+		assertTrue( true );
+	}
 }
